@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitverse</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-image: url(./stocks/bg.png);
+            background-position: center;
+            background-size: cover;
+            height: 900px;
+            
+        }
+
+        nav{
+            z-index: 2;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: auto;
+            background-color: #5C4F0570;
+            height: 88px;
+            border-radius: 15px;
+            position: relative;
+            top: 40px;
+            background: #5C4F0570;
+            border-image-source: linear-gradient(90.29deg, rgba(255, 255, 255, 0.31) 0%, rgba(255, 255, 255, 0) 100%);
+            border: 0.1px solid #ffed866b;
+            box-shadow: 0px 2px 19.5px 0px #DBB80033;
+        }
+
+        .logo{
+            display: flex;
+            flex-direction: row;
+            img{
+                margin: 11px 0px 10px 25px;
+            }
+        }
+
+        .cols{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            span{
+                padding-right: 30px;
+                font-family: Inter;
+                color: white;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 16.5px;
+                text-align: left;
+            }
+
+            button{
+                margin: 20px;
+                width: 187px;
+                height: 55px;
+                gap: 0px;
+                border-radius: 10px;
+                opacity: 0px;
+                border: none;
+                background: #F9D326;
+                font-family: Inter;
+                font-size: larger;
+                font-weight: 600;
+            }
+        }
+
+        .cube{
+            z-index: -1;
+            img{
+            /* position: relative; */
+            /* bottom: 170px; */
+            width: 237px;
+            height: auto;
+            gap: 0px;
+            opacity: 0px;
+            angle: -2.82 deg;
+            }
+        }
+
+        .mid{
+            max-width: 1300px;
+            margin: auto;
+            h1{
+                padding: 50px;
+                max-width: 1024px;
+                margin: auto;
+                font-family: Inter;
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 40.32px;
+                text-align: center;
+                color: #FDFFE3;
+            }
+            button{
+                padding: 15px 25px 15px 25px;
+                display: block;
+                margin: auto;
+                width: Hug (175px)px;
+                height: Hug (55px)px;
+                gap: 32px;
+                opacity: 0px;
+                width: Hug (175px)px;
+                height: Fixed (55px)px;
+                gap: 0px;
+                border-radius: 100px;
+                opacity: 0px;
+                background: linear-gradient(94.2deg, #FECC00 0%, #FEA800 100%);
+                box-shadow: 2px 2px 20px 0px #FECC0000;
+                box-shadow: -2px -2px 20px 0px #FECC0000;
+                border: 2px solid #FFFFFF;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 27.11px;
+                text-align: center;
+                color: #1C1C1C;
+            }
+        }
+
+        .image{
+            background-image: url(./stocks/Graph\ Paper\ -\ 01.png);
+
+            margin-top: 50px;
+            display: flex;
+            img{
+                max-width: 1300px;
+                margin: auto;
+            }
+        }
+
+        main{
+        background-image: url(./stocks/bg2.png);
+        background-position: center;
+        background-size: cover;
+        height: 1100px;
+        }
+
+
+        
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    h1 {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: Kanit;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+}
+
+}
+
+
+.highlight {
+    color: #fdd835;
+    text-decoration: underline;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #ccc;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33.89px;
+    text-align: center;
+
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+    font-family: Inter;
+
+}
+
+.product-card {
+    box-shadow: rgba(255, 251, 0, 40%) 0px 0px 0px 2px, rgba(255, 251, 0, 8%) 0px 4px 6px -1px, rgba(255, 251, 0, 40%) 0px 1px 0px inset;
+
+
+
+    width: 314px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    letter-spacing: 0.38804346323013306px;
+    text-align: center;
+    img{
+        width: 200px;
+        height: auto;
+    }
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.roadmap-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #fdd835;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #333;
+    margin: 10px auto 0;
+}
+
+
+.roadmap {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+.roadmap:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #333;
+    z-index: 0;
+}
+
+.phase {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    flex-basis: 30%;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.phase:hover {
+    transform: translateY(-10px);
+}
+
+.phase h2 {
+    font-size: 96px;
+    color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+}
+
+.phase-label {
+    background-color: #fdd835;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+
+h3 {
+    /* margin: 20px 0 10px; */
+    font-size: 22px;
+    
+}
+
+.quarter {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.phase:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #fdd835;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.phase:last-child:before {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .roadmap {
+        flex-direction: column;
+    }
+
+    .phase:before {
+        right: 50%;
+        bottom: 100%;
+        transform: translateX(50%);
+    }
+}
+
+section{
+    font-family: Kanit;
+    h1{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 83.72px;
+    text-align: left;
+    }
+}
+
+</style>
+</head>
+<body>
+    <header>    
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./stocks/Frame 427318968.png" alt="">
+                </div>
+                <div class="cols">
+                    <span>About</span>
+                    <span>Our Products</span>
+                    <span>Token Utility</span>
+                    <span>Roadmap</span>
+                    <button>
+                        Connect Wallet
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="cube">
+            <img src="./stocks/21.png" alt="">
+        </div> -->
+        <div class="mid">
+            <div class="image">
+                <img src="./stocks/Frame 4.png" alt="">
+            </div>
+            <h1>
+                Lorem ipsum dolor sit amet consectetur. Porta amet tellus suspendisse id velit proin eleifend id mauris. Amet sem in id eget nunc quam lacus tellus augue.
+            </h1>
+            <button>
+                Get Started >
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Our <span class="highlight">Products</span></h1>
+            <p class="description">Pellentesque habitant morbi tristique senectus et netus et Pellentesque habitant morbi.</p>
+            
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://s3-alpha-sig.figma.com/img/051b/877e/471e5c7d52e1fa576990183a51c13e7b?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cEkciK8ygx6lgaToX1czfx9SbFQQAXtCNLZbJ-c1DQNUT-8qTk4Fd2LNxgXEKBrecW0TdfyPRR5vutuHh-Cg2Jgx~d7fu6gFzKZjKb~CBRQ3oTba2bzZ4ETRIq~iTnYfa8MmQtSnRSvS~j1FkKsA7ely0PNQpG2PElwZ-CsGrlwdplhac91m3o1l0tUDCozEa0RgZcP1fbClLzNevJ6MwTTc8FfBST8gdn2bb4sGt1RaSFJrSDVo7vXxRRn8r5l8NFeRbosGva1-9T3iLSK9k18W7eN9DqOHA7MdkyTm3wbRsTAwPxwF8KnEWOjIp8npF2cYkId5NSB8OBOkVp1YBQ__" alt="Bita Marketplace" class="icon">
+                    <h2>Bita Marketplace</h2>
+                    <hr style="border: 1px solid #fdd835;max-width: 500px;">
+                    <p style="font-weight: 400;">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://s3-alpha-sig.figma.com/img/181d/ccff/a2d52abed3b2526cc5e1e71e5fdeabb8?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UZl4iabkhj7RCk4s7Pg0qKVbsWrrQWkyjYAFGP6QSIatWfK7cm-g7dzvcLxpX66hYDEfkxXIThlBTF57QMMVdLVTnK0x6PbIYaDFdHWH-cupIbVeyAirt3GW3YZmo8SVQPIF4aMghbgPvrk-aXsD6KBGJlcQs-am2o0l0ElviIUp-UmG1jUrqfj-PHCMhKjOdBkQ~4MKGPdm7ZOwATBd134Q9Zq8x0xBVrcyIQ2tAD-~~vDetaIdNvWsW-zU8OD8mbUHVt5oXCB9BV~JQeeS3d3sfGihUSqJKMTxgkLUbVpGTyM51yNzBvmF0JsPNPcpFsIlTJBXpNVYHmlxMN9k7g__" alt="Bitadex" class="icon">
+                    <h2>Bitadex</h2>
+                    <hr style="border: 1px solid #fdd835;max-width: 500px;">
+                    <p style="font-weight: 400;">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://s3-alpha-sig.figma.com/img/8d48/f5f8/2a6ec05acd829b0cd77681132e156419?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hkV6Y5LxB7n56iFqCrxLXFAh5ngMeZM3isB1P0M0xGe0MJTcOkdGflmJGC0Jp5-iJV45a7BXg4jPgDGJw3WqK72cHGhjnOVYjxSKIjQ6se0bR5oyQ6bt0ELBZi7i2jzBLzo~TMCJPU3KTrPte3sq92FxgUzwMw8-9--HtrRyXptj6y6~zlxAsvkDDGktmaeLZ9SgkMjrRykmM8B04mx8Qegm5BoP7Bttv-nIZvX9Lgee2sZnDGrhPIHUsm6fNWePqKdTeAnz-~4-bgI1PkQUCjfNU1hVueYydnzAxU01t5Jc8b5G552eOxzsdck4n9tUCoUM~IcrwXQQTTRi~gpx7w__" alt="Bitabridge" class="icon">
+                    <h2>Bitabridge</h2>
+                    <hr style="border: 1px solid #fdd835;max-width: 500px;">
+                    <p style="font-weight: 400;">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://s3-alpha-sig.figma.com/img/f46f/7487/0ca93e50da5161da10041a0bfd15927d?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=igFF68CaLgr9ceJNPa-oKTSqcoilR9LuO3B7s9qdjiw4YjvJh7of-d~qo8DUtYDP8yG9qZhiFeEYyYKguyMgJXUg6cQy4MDzaHCRHq2vR3SMw0rO-6yjzbkph-gba7JJILO9CiLKa4yOUEY5VCg7R-MTA1-jfYHIh46eJUXmujLbGUy-Z5YzGpQ72M4a~xxFHceV29E32hRc8xplnXsefXCEl3KmdkN1C2FvaQPQMoJQpOwaB9oBvZdtc2sMrn7RRo-bnkdYzcCxVbU9Sa6YKAhoRWohoHYPuCyo1UAp6g91jSFaSOZYE5BMmCBTSpD0B8HVeHvwbftWE3zndiSnzQ__" alt="Bitapad" class="icon">
+                    <h2>Bitapad</h2>
+                    <hr style="border: 1px solid #fdd835;max-width: 500px;">
+                    <p style="font-weight: 400;">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://s3-alpha-sig.figma.com/img/a48c/a537/39f8f2389c78300187c2ab27ca1f3a07?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=erREobdskud0wH~~gEJ-tLdD46dlACrSzjlHmAE0dzUAR-37oxR4DyP0oT6SZ-VGfZ6jQxfBXxXfZHOnPw7xpj1K4Sdq2eq~XdKiXGST~FNqjvWHLZJslwkZ84oNhydZcZw00bHggNMKFuCSxzro1IDSRO3Ha2Eu6e5dET4GuKBBdvQqymcYbupiC2ATEKpE8yFzyfnh3rbJ~FMU-ct~KM6Dgk-ZA0ggecHo4WAx~SXcNvTS2x4MFDDFnc5pA82hm4gKRROUGmDkbGMzX8lHoUYjDSA5MW8RAl~hI8K1pRQm9yaKkbND7XNi21Y5WZY-Q1BgZK9yuC7kURp0SZH3DQ__" alt="BitaLend" class="icon">
+                    <h2>BitaLend</h2>
+                    <hr style="border: 1px solid #fdd835;max-width: 500px;">
+                    <p style="font-weight: 400;">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://s3-alpha-sig.figma.com/img/a48c/a537/39f8f2389c78300187c2ab27ca1f3a07?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=erREobdskud0wH~~gEJ-tLdD46dlACrSzjlHmAE0dzUAR-37oxR4DyP0oT6SZ-VGfZ6jQxfBXxXfZHOnPw7xpj1K4Sdq2eq~XdKiXGST~FNqjvWHLZJslwkZ84oNhydZcZw00bHggNMKFuCSxzro1IDSRO3Ha2Eu6e5dET4GuKBBdvQqymcYbupiC2ATEKpE8yFzyfnh3rbJ~FMU-ct~KM6Dgk-ZA0ggecHo4WAx~SXcNvTS2x4MFDDFnc5pA82hm4gKRROUGmDkbGMzX8lHoUYjDSA5MW8RAl~hI8K1pRQm9yaKkbND7XNi21Y5WZY-Q1BgZK9yuC7kURp0SZH3DQ__" alt="BitaLend" class="icon">
+                    <h2>BitaLend</h2>
+                    <hr style="border: 1px solid #fdd835;max-width: 500px;">
+                    <p style="font-weight: 400;">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="roadmap-container">
+            <h1>Roadmap</h1>
+            <div class="roadmap">
+                <div class="phase">
+                    <div class="phase-content">
+                        <h2>01</h2>
+                        <div class="phase-label">PHASE-1</div>
+                        <h3>Initial Design and Development</h3>
+                        <p class="quarter">Q4 2023</p>
+                        <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-content">
+                        <h2>02</h2>
+                        <div class="phase-label">PHASE-2</div>
+                        <h3>Release and Testing of Bita Market & Bridge</h3>
+                        <p class="quarter">Q1 2024</p>
+                        <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                    </div>
+                </div>
+                <div class="phase">
+                    <div class="phase-content">
+                        <h2>03</h2>
+                        <div class="phase-label">PHASE-3</div>
+                        <h3>Bitapad & Rollout</h3>
+                        <p class="quarter">Q2 2024</p>
+                        <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
